@@ -11,6 +11,9 @@ router.route('/users')
 
 router.post('/users/:_id/exercises', exerciseController.exerciseCreate)
 
-router.get('/users/:_id/logs', exerciseController.exerciseList)
+router.get('/users/:_id/logs',
+    exerciseController.logQueryStringParser,
+    exerciseController.exerciseList
+)
 
 module.exports = router

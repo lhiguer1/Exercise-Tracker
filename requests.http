@@ -14,15 +14,19 @@ Content-Type: application/json
 GET {{baseUrl}}/users  HTTP/1.1
 
 ### Create Exercise
-POST {{baseUrl}}/users/6408f5cee7282bac681e1af5/exercises HTTP/1.1
+POST {{baseUrl}}/users/64095af1dec376c0e6dc3f2b/exercises HTTP/1.1
 Content-Type: application/json
 
 {
-    "description": "Jumping Jacks",
+    "description": "BDL",
     "duration": 60,
-    "username": "aaabbbccc"
+    "username": "aaabbbccc",
+    "date": "2020-01-32"
 }
 
 
+### Get Users
+GET {{baseUrl}}/users/64095af1dec376c0e6dc3f2b/exercises HTTP/1.1
+
 ### Get logs
-GET {{baseUrl}}/users/6408f5cee7282bac681e1af5/logs HTTP/1.1
+GET {{baseUrl}}/users/64095af1dec376c0e6dc3f2b/logs?from=2023-01-32 HTTP/1.1
