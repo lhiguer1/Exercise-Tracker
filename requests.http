@@ -1,0 +1,28 @@
+@baseUrl = http://localhost:3000/api
+
+### Create User
+POST {{baseUrl}}/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "aaabbbccc"
+}
+
+
+
+### List Users 
+GET {{baseUrl}}/users  HTTP/1.1
+
+### Create Exercise
+POST {{baseUrl}}/users/6408f5cee7282bac681e1af5/exercises HTTP/1.1
+Content-Type: application/json
+
+{
+    "description": "Jumping Jacks",
+    "duration": 60,
+    "username": "aaabbbccc"
+}
+
+
+### Get logs
+GET {{baseUrl}}/users/6408f5cee7282bac681e1af5/logs HTTP/1.1
