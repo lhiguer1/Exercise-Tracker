@@ -42,7 +42,7 @@ module.exports = {
             .select(['description', 'duration', 'date', '-_id'])
 
         if (from) query.gte('date', from)
-        if (to) query.lte('date', limit)
+        if (to) query.lte('date', to)
         if (limit) query.limit(limit)
 
 
